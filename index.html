@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Young Champz</title>
+
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: Arial, sans-serif;
       background: #f5f5f5;
       color: #222;
@@ -16,12 +22,11 @@
     header {
       background: #111;
       color: white;
-      padding: 25px 15px;
+      padding: 20px;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 36px;
+    header h1 {
+      font-size: 30px;
     }
 
     .hero {
@@ -30,18 +35,20 @@
     }
 
     .hero h2 {
-      font-size: 30px;
+      font-size: 32px;
       margin-bottom: 15px;
     }
 
     .hero p {
       font-size: 18px;
       line-height: 1.6;
+      max-width: 600px;
+      margin: auto;
     }
 
     .button {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 25px;
       padding: 14px 25px;
       background: #111;
       color: white;
@@ -49,8 +56,16 @@
       border-radius: 8px;
     }
 
+    .about {
+      padding: 50px 20px;
+    }
+
+    .about h2 {
+      margin-bottom: 15px;
+    }
+
     footer {
-      margin-top: 50px;
+      margin-top: 30px;
       padding: 20px;
       background: #111;
       color: white;
@@ -66,12 +81,23 @@
 
   <section class="hero">
     <h2>Welcome to Young Champz</h2>
+
     <p>
-      Welcome to our website. We are building something exciting
-      and more features will be added soon.
+      Young Champz is a growing platform created to connect,
+      inspire and empower young people. More exciting features
+      will be added soon.
     </p>
 
-    <a class="button" href="#">Get Started</a>
+    <a class="button" href="#about">Get Started</a>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Young Champz</h2>
+
+    <p>
+      We are building something exciting for the Young Champz community.
+      Stay connected as we continue developing the platform.
+    </p>
   </section>
 
   <footer>
